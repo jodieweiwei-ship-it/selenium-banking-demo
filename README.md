@@ -92,7 +92,7 @@ Current test scenarios:
 
 ## 👤 Author
 Wei Wei (Jodie)
-- LinkedIn: [your-linkedin-url]
+- LinkedIn: https://www.linkedin.com/in/wei-wei-jodie/
 - Email: jodieweiwei@gmail.com
 
 ## 📄 License
