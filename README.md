@@ -88,7 +88,7 @@ Current test scenarios:
 ## 📝 Notes
 - Demo application: https://demo.guru99.com/V4/
 - This is a practice project demonstrating automation testing skills
-- Test credentials: UserID: `mngr550206` | Password: `YpYredE`
+- Test credentials: UserID: `mngr644332` | Password: `rarehup`
 
 ## 👤 Author
 Wei Wei (Jodie)
@@ -99,4 +99,4 @@ Wei Wei (Jodie)
 This project is for educational and demonstration purposes.
 
 ## 📊 Test Results
-![Test Report](test-report.png)
+![Test Report](screenshots/test-report.png)
