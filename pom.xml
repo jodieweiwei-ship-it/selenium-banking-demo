@@ -10,14 +10,15 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium.version>4.15.0</selenium.version>
-        <testng.version>7.8.0</testng.version>
+        <selenium.version>4.27.0</selenium.version>
+        <testng.version>7.10.2</testng.version>
     </properties>
 
     <dependencies>
+
         <!-- Selenium WebDriver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -37,7 +38,7 @@
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.6.2</version>
+            <version>5.9.2</version>
         </dependency>
     </dependencies>
 

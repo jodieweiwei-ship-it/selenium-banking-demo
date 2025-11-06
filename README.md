@@ -76,6 +76,7 @@ Current test scenarios:
 - ✅ Invalid credentials handling
 - ✅ Empty field validation
 - ✅ Dashboard elements verification
+- ✅ run all 3 browsers(Firefox,Edge,Chrome) simultaneously
 
 ## 🎯 Future Enhancements
 - [ ] Add ExtentReports for detailed HTML reporting
@@ -89,6 +90,15 @@ Current test scenarios:
 - Demo application: https://demo.guru99.com/V4/
 - This is a practice project demonstrating automation testing skills
 - Test credentials: UserID: `mngr644332` | Password: `rarehup`
+### Getting Demo Credentials
+If the provided credentials don't work (they may expire), you can:
+1. Visit https://demo.guru99.com/V4/
+2. Look for demo credentials on the homepage
+3. Or click "Get Free Credentials" to receive new ones via email
+
+**Alternative**: Use ParaBank demo site at https://parabank.parasoft.com
+- More stable and allows self-registration
+- Better for long-term practice
 
 ## 👤 Author
 Wei Wei (Jodie)
@@ -100,3 +110,4 @@ This project is for educational and demonstration purposes.
 
 ## 📊 Test Results
 ![Test Report](screenshots/test-report.png)
+![Test Report](screenshots/Screenshot 2025-11-06 182750.png)
