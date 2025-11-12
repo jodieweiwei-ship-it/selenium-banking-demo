@@ -13,7 +13,7 @@ public class BaseTest {
     protected String baseUrl = "https://demo.guru99.com/V4/";
     @BeforeMethod
     @Parameters("browser")
-    public void setUp(@Optional("edge")String browser) {
+    public void setUp(@Optional("chrome")String browser) {
         DriverManager.initDriver(browser);
         driver=DriverManager.getDriver();
         driver.get(baseUrl);

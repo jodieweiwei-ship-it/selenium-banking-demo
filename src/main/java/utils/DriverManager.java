@@ -22,17 +22,18 @@ public class DriverManager {
 	        WebDriver driver = null;
 
 	        switch (browser.toLowerCase()) {
-	            case "chrome":
-	                WebDriverManager.chromedriver().setup();
-	                ChromeOptions chromeOptions = new ChromeOptions();
-	                chromeOptions.addArguments("--start-maximized", "--disable-notifications");
-	                driver = new ChromeDriver(chromeOptions);
-	                break;
-
 	            case "firefox":
 	                WebDriverManager.firefoxdriver().setup();
 	                driver = new FirefoxDriver();
 	                driver.manage().window().maximize();
+	                break;
+
+	            case "chrome":
+	                WebDriverManager.chromedriver().setup();
+	                ChromeOptions chromeOptions = new ChromeOptions();
+	                chromeOptions.addArguments("--start-maximized", "--disable-notifications","--remote-allow-origins=*");
+	                chromeOptions.setExperimentalOption("excludeSwitches", new String[]{"enable-logging"});
+	                driver = new ChromeDriver(chromeOptions);
 	                break;
 
 	            case "edge":
