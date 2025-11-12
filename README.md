@@ -75,16 +75,15 @@ Current test scenarios:
 - ✅ Valid login verification
 - ✅ Invalid credentials handling
 - ✅ Empty field validation
-- ✅ Dashboard elements verification
-- ✅ run all 3 browsers(Firefox,Edge,Chrome) simultaneously
+- ✅ Dashboard elements and functions verification
+- ✅ Cross-browser testing (Firefox, Edge) (Implement parallel execution)
 
 ## 🎯 Future Enhancements
 - [ ] Add ExtentReports for detailed HTML reporting
 - [ ] Implement data-driven testing with CSV/Excel
 - [ ] Add API testing integration
-- [ ] Implement parallel execution
 - [ ] Add CI/CD integration (Jenkins/GitHub Actions)
-- [ ] Cross-browser testing (Firefox, Edge)
+
 
 ## 📝 Notes
 - Demo application: https://demo.guru99.com/V4/
