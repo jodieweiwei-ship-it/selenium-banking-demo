@@ -16,8 +16,24 @@ public class DashboardPage {
     // Locators
     private By welcomeMessage = By.cssSelector("marquee.heading3");
     private By managerIdLabel = By.cssSelector("tr.heading3 td");
-    public By logoutLink = By.linkText("Log out");
+    private By logoutLink = By.linkText("Log out");
+    private By NewCustomerButton = By.linkText("New Customer");
+    private By AddNewCustomerLable=By.cssSelector(".heading3");
+    private By newAccountSubmitButton=By.name("sub");
+    private By newAccountCustomerName=By.name("name");
+    private By newAccountGenderFemale=By.cssSelector("input[value=\"m\"]");
+    private By newAccountGenderMale=By.cssSelector("input[value=\"f\"]");
+    private By newAccountDOB=By.name("dob");
+    private By newAccountAddress=By.name("addr");
+    private By newAccountCity=By.name("city");
+    private By newAccountState=By.name("state");
+    private By newAccountPIN=By.name("pinno");
+    private By newAccountMobileNo=By.name("telephoneno");
+    private By newAccountEmail=By.name("emailid");
+    private By newAccountPassword=By.name("password");
+    private By customerRegisterSuccessfully=By.cssSelector("#customer .heading3");
 
+    
     public DashboardPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -65,4 +81,35 @@ public class DashboardPage {
     public String getPageTitle() {
         return driver.getTitle();
     }
+    public String getAddNewCustomerForm() {
+    	driver.findElement(NewCustomerButton).click();
+    	return driver.findElement(AddNewCustomerLable).getText();
+    }
+
+	public void fillAddNewCustomerForm(String name, String gender, String DOB, String address, String city,
+			String state, String PIN, String mobileNo,String email, String password) {
+		driver.findElement(newAccountCustomerName).sendKeys(name);
+		if(gender.toLowerCase().equals("female"))
+			driver.findElement(newAccountGenderFemale).click();
+		else
+			driver.findElement(newAccountGenderMale).click();
+		driver.findElement(newAccountDOB).sendKeys(DOB);
+		driver.findElement(newAccountAddress).sendKeys(address);
+		driver.findElement(newAccountCity).sendKeys(city);
+		driver.findElement(newAccountState).sendKeys(state);
+		driver.findElement(newAccountPIN).sendKeys(PIN);
+		driver.findElement(newAccountMobileNo).sendKeys(mobileNo);
+		driver.findElement(newAccountEmail).sendKeys(email);
+		driver.findElement(newAccountPassword).sendKeys(password);	
+
+	}
+
+	public void submit() {
+		driver.findElement(newAccountSubmitButton).click();
+	}
+
+	public String checkCustomerRegistered() {
+		// TODO Auto-generated method stub
+		return driver.findElement(customerRegisterSuccessfully).getText();
+	}
 }
