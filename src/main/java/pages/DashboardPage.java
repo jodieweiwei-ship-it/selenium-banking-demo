@@ -33,7 +33,10 @@ public class DashboardPage {
     private By newAccountPassword=By.name("password");
     private By customerRegisterSuccessfully=By.cssSelector("#customer .heading3");
 
-    
+    private By EditCustomerButton = By.linkText("Edit Customer");
+    private By EditCustomerSubmitButton=By.name("AccSubmit");
+    private By EditCustomerID=By.name("cusid");
+
     public DashboardPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
