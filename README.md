@@ -76,7 +76,7 @@ Current test scenarios:
 - ✅ Invalid credentials handling
 - ✅ Empty field validation
 - ✅ Dashboard elements and functions verification
-- ✅ Cross-browser testing (Firefox, Edge) (Implement parallel execution)
+- ✅ Cross-browser testing (Firefox, Edge, chrome) (Implement parallel execution)
 
 ## 🎯 Future Enhancements
 - [ ] Add ExtentReports for detailed HTML reporting
@@ -112,3 +112,4 @@ This project is for educational and demonstration purposes.
 ![Test Report](screenshots/Screenshot-2025-11-06-182750.png)
 ![Test Report](screenshots/Screenshot-2025-11-12-132201.png)
 ![Test Report](screenshots/Screenshot-2025-11-14-230118.png)
+![Test Report](screenshots/Screenshot-2025-11-25-191113.png)
