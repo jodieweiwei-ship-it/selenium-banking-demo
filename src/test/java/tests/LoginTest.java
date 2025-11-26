@@ -9,9 +9,8 @@ public class LoginTest extends BaseTest {
 
     @Test(priority = 1, description = "Verify successful login with valid credentials")
     public void testValidLogin() {
-        LoginPage loginPage = new LoginPage(driver);
-        DashboardPage dashboard = loginPage.login("mngr644332", "rarehup");
-        
+    	DashboardPage dashboard=loginToDashboard();
+       
         Assert.assertTrue(dashboard.isWelcomeMessageDisplayed(), 
             "Welcome To Manager's Page of Guru99 Bank");
         Assert.assertTrue(dashboard.getPageTitle().contains("Guru99 Bank"), 
@@ -20,10 +19,12 @@ public class LoginTest extends BaseTest {
 
     @Test(priority = 2, description = "Verify login fails with invalid credentials")
     public void testInvalidLogin() {
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterUserId("invalid_user");
-        loginPage.enterPassword("invalid_pass");
-        loginPage.clickLogin();
+    	DashboardPage dashboard=loginToDashboard("invalid_user","invalid_pass");
+
+//        LoginPage loginPage = new LoginPage(driver);
+//        loginPage.enterUserId("invalid_user");
+//        loginPage.enterPassword("invalid_pass");
+//        loginPage.clickLogin();
 
         // Accept alert that appears on invalid login
         try {

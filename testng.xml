@@ -37,4 +37,22 @@
             <class name="tests.DashboardTest"/>
         </classes>
     </test>
+      <test name="Balance Enquiry Tests - ChromeTest">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="tests.BalanceEnquiryTest"/>
+        </classes>
+    </test>
+    <test name="Balance Enquiry Tests - FirefoxTest">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="tests.BalanceEnquiryTest"/>
+        </classes>
+    </test>    
+    <test name="Balance Enquiry Tests - EdgeTest">
+        <parameter name="browser" value="edge" />
+        <classes>
+            <class name="tests.BalanceEnquiryTest"/>
+        </classes>
+    </test>
 </suite>
