@@ -1,7 +1,8 @@
-# Compiled class file
+# ===== Java =====
+# Compiled class files
 *.class
 
-# Log file
+# Log files
 *.log
 
 # BlueJ files
@@ -10,7 +11,7 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files
 *.jar
 *.war
 *.nar
@@ -19,11 +20,201 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs
 hs_err_pid*
 replay_pid*
 
-#
+# ===== Maven =====
 target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ===== TestNG =====
 test-output/
+testng-results.xml
+testng.xml.tmp
+
+# ===== Selenium =====
+# Screenshots from failed tests (documentation screenshots committed)
+# screenshots/
+# **/screenshots/*.png
+# **/screenshots/*.jpg
+
+# Browser driver logs
+chromedriver.log
+geckodriver.log
+msedgedriver.log
+
+# WebDriver binaries (if not using WebDriverManager)
+drivers/
+**/drivers/chromedriver.exe
+**/drivers/geckodriver.exe
+**/drivers/msedgedriver.exe
+
+# Allure results (if using Allure reporting)
+allure-results/
+allure-report/
+
+# ExtentReports (if added in future)
+extent-reports/
+test-report/
+reports/
+
+# ===== IDE - IntelliJ IDEA =====
 .idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+
+# ===== IDE - Eclipse =====
+.classpath
+.project
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+.externalToolBuilders/
+*.launch
+.factorypath
+.buildpath
+.target
+.tern-project
+.texlipse
+.springBeans
+.recommenders/
+.apt_generated/
+.apt_generated_test/
+.cache-main
+.scala_dependencies
+.worksheet
+
+# ===== IDE - VS Code =====
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ===== IDE - NetBeans =====
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ===== OS Specific =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===== Build and Dependency Management =====
+# Gradle (if switching to Gradle)
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-app.setting
+!gradle-wrapper.properties
+
+# ===== Testing Artifacts =====
+# Video recordings of test runs
+*.webm
+*.mp4
+*.avi
+videos/
+
+# Test data dumps
+test-data-dump/
+*.sql
+
+# Performance test results
+performance/
+jmeter.log
+
+# ===== Security =====
+# Don't commit credentials or sensitive data
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.properties
+secrets.properties
+.env
+.env.local
+
+# ===== Documentation =====
+# API documentation
+docs/api/
+javadoc/
+
+# ===== Temporary Files =====
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.#*
+
+# ===== Node (if using npm for any front-end testing) =====
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# ===== Custom Project Specific =====
+# Add any project-specific ignores here
+# Example: custom configuration files with sensitive data
+config/local.properties
